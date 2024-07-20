@@ -29,23 +29,23 @@ function chekNum(UserNum) {
     }
 
 }
+
 function chekForm() {
-    alert("hii");
     var fname = document.getElementById('fNameUser').value;
     var lname = document.getElementById('lNameUser').value;
    
     var numU = document.getElementById('usrtel').value;
     
      var sum = 0;
-    sum = chekName(fname);
+    sum = parseInt(chekName(fname));
     if (sum == 0) {
         document.getElementById('fNameUser').innerHTML = " ";
     }
-       sum = sum + chekName(lname);
+    sum = sum + parseInt(chekName(lname));
     if (sum <1) {
         document.getElementById('lNameUser').innerHTML = " ";
     }
-    sum = sum + chekNum(numU);
+    sum = sum + parseInt(chekNum(numU));
     if (sum == 3) {
         alert("הטופס נשלח בהצלחה");
     }
