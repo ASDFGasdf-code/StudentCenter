@@ -1,7 +1,6 @@
 ﻿var chek = 0;
 function chekName(UserName) {
-    alert(UserName.length);
-    chek = 0;
+      chek = 0;
     if (UserName.length >1 && UserName.length < 12) {
         chek = 1;
         return chek;
